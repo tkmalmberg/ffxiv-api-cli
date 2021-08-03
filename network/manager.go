@@ -8,6 +8,11 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
+var (
+	base_url    = "FFXIV_BASE_URL"
+	private_key = "FFXIV_PRIVATE_KEY"
+)
+
 func ApiRequestGet(req http.Request, token string, class interface{}) error {
 
 	res, err := http.Get(req.URL.String())

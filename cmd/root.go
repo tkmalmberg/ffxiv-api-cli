@@ -11,7 +11,7 @@ var rootCmd = &cobra.Command{
 	Use:   "ffxiv",
 	Short: "CLI for Final Fantasy XIV",
 	Long: `CLI to get information from Final Fantasy XIV.
-			Currently set up to return information about specific characters`,
+	Currently set up to return information about specific characters`,
 }
 
 func Execute() error {
